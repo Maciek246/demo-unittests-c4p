@@ -6,7 +6,7 @@ describe('Button component', () => {
     it('should be rendered', () => {
         const { queryByText } = render(<Button>TEST</Button>)
 
-        expect(queryByText('TEST')).toBeTruthy()
+        expect(queryByText('TEST')).toBeTruthy() // or toBeInTheDocument()
     });
 
     it('should render children prop as label', () => {
